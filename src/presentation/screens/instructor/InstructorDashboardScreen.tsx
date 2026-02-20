@@ -319,53 +319,79 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    padding: 24,
-    paddingTop: 40,
+    padding: 20,
+    paddingTop: 20,
+    paddingBottom: 20,
+    backgroundColor: colors.surface,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.borderLight,
   },
 
   greeting: {
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: '700',
+    fontSize: 24,
+    letterSpacing: -0.5,
   },
 
   subtitle: {
     color: colors.textSecondary,
     marginTop: 4,
+    fontSize: 14,
   },
 
   kpisGrid: {
     flexDirection: 'row',
     paddingHorizontal: 16,
-    gap: 12,
-    marginBottom: 12,
+    gap: 10,
+    marginBottom: 10,
   },
 
   kpiCard: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.surface,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: colors.borderLight,
+    elevation: 2,
+    shadowColor: colors.shadow.card,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 4,
   },
 
   kpiContent: {
     alignItems: 'center',
-    paddingVertical: 20,
+    paddingVertical: 18,
   },
 
   kpiNumber: {
     color: colors.text,
     fontWeight: '700',
-    marginTop: 12,
+    marginTop: 10,
     marginBottom: 4,
+    letterSpacing: -0.5,
   },
 
   kpiLabel: {
     color: colors.textSecondary,
     textAlign: 'center',
+    fontSize: 12,
+    lineHeight: 17,
   },
 
   card: {
     marginHorizontal: 16,
-    marginBottom: 16,
-    backgroundColor: '#FFFFFF',
+    marginBottom: 12,
+    backgroundColor: colors.surface,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: colors.borderLight,
+    elevation: 2,
+    shadowColor: colors.shadow.card,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 4,
   },
 
   cardHeader: {
@@ -377,7 +403,8 @@ const styles = StyleSheet.create({
   cardTitle: {
     marginLeft: 8,
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: '700',
+    fontSize: 15,
   },
 
   inProgressText: {
@@ -387,29 +414,38 @@ const styles = StyleSheet.create({
 
   cardButton: {
     marginTop: 8,
+    borderRadius: 12,
   },
 
   actionsContainer: {
     marginHorizontal: 16,
-    marginTop: 8,
-    marginBottom: 16,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 8,
+    marginTop: 4,
+    marginBottom: 12,
+    backgroundColor: colors.surface,
+    borderRadius: 16,
     padding: 16,
+    borderWidth: 1,
+    borderColor: colors.borderLight,
+    elevation: 2,
+    shadowColor: colors.shadow.card,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 4,
   },
 
   actionsTitle: {
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: '700',
     marginBottom: 12,
+    fontSize: 15,
   },
 
   actionItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 12,
+    paddingVertical: 14,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    borderBottomColor: colors.borderLight,
   },
 
   actionIconBadge: {
@@ -430,7 +466,7 @@ const styles = StyleSheet.create({
   },
 
   badgeText: {
-    color: '#FFFFFF',
+    color: colors.onPrimary,
     fontSize: 11,
     fontWeight: '700',
   },
@@ -439,6 +475,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 12,
     color: colors.text,
+    fontSize: 15,
   },
 
   logoutButton: {

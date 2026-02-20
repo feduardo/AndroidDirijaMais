@@ -1,5 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import { colors } from '@/presentation/theme';
+
+const { width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
@@ -193,15 +195,17 @@ export const styles = StyleSheet.create({
   criteriaGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 12,
     marginBottom: 16,
+    marginHorizontal: -5,
   },
 
   criteriaItem: {
-    width: '48%',
+    width: (width - 32 - 32 - 20) / 2,
+    marginHorizontal: 5,
+    marginBottom: 10,
     backgroundColor: colors.background,
     borderRadius: 12,
-    padding: 16,
+    padding: 14,
     alignItems: 'center',
     borderWidth: 2,
     borderColor: colors.border,

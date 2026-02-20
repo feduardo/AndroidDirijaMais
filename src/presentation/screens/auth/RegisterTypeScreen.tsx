@@ -122,41 +122,62 @@ const styles = StyleSheet.create({
   backButton: {
     position: 'absolute',
     left: 20,
-    width: 44,
-    height: 44,
+    width: 40,
+    height: 40,
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 10,
+    borderRadius: 20,
+    backgroundColor: colors.surface,
+    shadowColor: colors.shadow.card,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 4,
+    elevation: 3,
   },
 
   logo: {
     width: 100,
     height: 100,
     alignSelf: 'center',
-    marginBottom: 24,
+    marginBottom: 28,
+    borderRadius: 16,
   },
 
   title: {
     textAlign: 'center',
     color: colors.text,
     marginBottom: 4,
+    fontWeight: '700',
+    fontSize: 26,
+    letterSpacing: -0.5,
   },
 
   subtitle: {
     textAlign: 'center',
     color: colors.textSecondary,
     marginBottom: 32,
+    fontSize: 15,
+    lineHeight: 22,
   },
 
   card: {
-    marginBottom: 16,
-    backgroundColor: '#FFFFFF',
+    marginBottom: 14,
+    backgroundColor: colors.surface,
+    borderRadius: 16,
+    elevation: 2,
+    shadowColor: colors.shadow.card,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 6,
+    borderWidth: 1,
+    borderColor: colors.borderLight,
   },
 
   cardContent: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 8,
+    paddingVertical: 12,
   },
 
   cardText: {
@@ -166,12 +187,14 @@ const styles = StyleSheet.create({
 
   cardTitle: {
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: '700',
     marginBottom: 4,
+    fontSize: 17,
   },
 
   cardDescription: {
     color: colors.textSecondary,
+    fontSize: 14,
   },
 
   loginContainer: {
@@ -183,10 +206,12 @@ const styles = StyleSheet.create({
   loginText: {
     color: colors.textSecondary,
     marginRight: 4,
+    fontSize: 15,
   },
 
   loginLink: {
-    color: colors.primary,
-    fontWeight: '600',
+    color: colors.primaryMid,
+    fontWeight: '700',
+    fontSize: 15,
   },
 });

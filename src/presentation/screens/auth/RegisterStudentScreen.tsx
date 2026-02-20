@@ -344,11 +344,18 @@ const styles = StyleSheet.create({
   backButton: {
     position: 'absolute',
     left: 20,
-    width: 44,
-    height: 44,
+    width: 40,
+    height: 40,
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 10,
+    borderRadius: 20,
+    backgroundColor: colors.surface,
+    shadowColor: colors.shadow.card,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 4,
+    elevation: 3,
   },
 
   scrollContent: {
@@ -361,28 +368,37 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: colors.text,
     marginBottom: 4,
+    fontWeight: '700',
+    fontSize: 26,
+    letterSpacing: -0.5,
   },
 
   subtitle: {
     textAlign: 'center',
     color: colors.textSecondary,
     marginBottom: 24,
+    fontSize: 15,
+    lineHeight: 22,
   },
 
   errorText: {
     color: colors.error,
     textAlign: 'center',
     marginBottom: 16,
+    fontSize: 14,
+    lineHeight: 20,
   },
 
   input: {
     marginBottom: 4,
+    backgroundColor: colors.surface,
   },
 
   fieldError: {
     color: colors.error,
     marginBottom: 8,
     marginLeft: 12,
+    fontSize: 13,
   },
 
   termsContainer: {
@@ -395,29 +411,41 @@ const styles = StyleSheet.create({
     flex: 1,
     color: colors.textSecondary,
     marginLeft: 8,
+    fontSize: 13,
+    lineHeight: 20,
   },
 
   termsLink: {
-    color: colors.primary,
-    fontWeight: '600',
+    color: colors.primaryMid,
+    fontWeight: '700',
+    fontSize: 13,
   },
 
   registerButton: {
     marginBottom: 24,
+    borderRadius: 12,
+    elevation: 4,
+    shadowColor: colors.shadow.button,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 1,
+    shadowRadius: 8,
   },
 
   loginContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
+    alignItems: 'center',
   },
 
   loginText: {
     color: colors.textSecondary,
     marginRight: 4,
+    fontSize: 15,
   },
 
   loginLink: {
-    color: colors.primary,
-    fontWeight: '600',
+    color: colors.primaryMid,
+    fontWeight: '700',
+    fontSize: 15,
   },
 });

@@ -46,7 +46,7 @@ export const GuestInstructorCard = ({
         ) : (
           <MaterialCommunityIcons
             name="account-circle"
-            size={48}
+            size={64}
             color={colors.primary}
           />
         )}
@@ -94,52 +94,69 @@ export const GuestInstructorCard = ({
 
 const styles = StyleSheet.create({
   card: {
-    width: 200,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 14,
+    width: 195,
+    backgroundColor: colors.surface,
+    borderRadius: 16,
     padding: 16,
     marginRight: 12,
-    elevation: 2,
+    elevation: 3,
+    shadowColor: 'rgba(17, 24, 39, 0.1)',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 6,
+    borderWidth: 1,
+    borderColor: colors.borderLight,
   },
   avatar: {
     alignSelf: 'center',
-    marginBottom: 8,
+    marginBottom: 12,
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: colors.primaryLight,
+    justifyContent: 'center',
+    alignItems: 'center',
+    overflow: 'hidden',
   },
   name: {
     color: colors.text,
     textAlign: 'center',
-    marginBottom: 8,
+    marginBottom: 10,
+    fontWeight: '700',
+    fontSize: 14,
   },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 6,
+    marginTop: 5,
   },
   icon: {
-    marginRight: 6,
+    marginRight: 5,
   },
   location: {
-    color: colors.text,
+    color: colors.textSecondary,
     flex: 1,
+    fontSize: 13,
   },
   distance: {
     color: colors.textSecondary,
+    fontSize: 13,
   },
   loginPrompt: {
     marginTop: 12,
     paddingTop: 12,
     borderTopWidth: 1,
-    borderTopColor: colors.border,
+    borderTopColor: colors.borderLight,
   },
   loginText: {
-    color: colors.primary,
+    color: colors.primaryMid,
     textAlign: 'center',
-    fontWeight: '500',
+    fontWeight: '600',
+    fontSize: 12,
   },
   avatarImage: {
-  width: 48,
-  height: 48,
-  borderRadius: 24,
-},
-
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+  },
 });
