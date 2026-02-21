@@ -85,6 +85,9 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.appdirijacerto"
+    lint {
+        disable 'Instantiatable'
+    }
     defaultConfig {
         applicationId "com.appdirijacerto"
         minSdkVersion rootProject.ext.minSdkVersion
